@@ -1,7 +1,7 @@
 @use './Header';
 @use './Main';
 @use './Aside';
-@use './Variables'as v;
+@use './Mobile';
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
@@ -23,5 +23,7 @@
     "sideBar sideBar main main main main main main main main main main"
     "sideBar sideBar main main main main main main main main main main";
 }
+
+
 
 

@@ -1,0 +1,38 @@
+@use './Mixins' as m;
+@use './Variables' as v;
+
+.App .mobile {
+    width:100vw;
+    height:100vh;
+    @include m.flex-column(center);
+    background-color: v.$firstBackground-color;
+}
+
+.logo-container {
+    width:30px;
+    height:30px;
+    padding:5px 10px;
+    border-radius: 50%;
+    background-color:#4834d4;
+    @include m.flex-box(center);
+    margin-bottom:20px;
+
+    .logo {
+        color:#22a6b3;
+    }
+}
+
+.mobile h4 {
+    font-size:12px;
+    line-height:20px;
+
+}
+
+@media  screen and (min-width:1000px) {
+    .App .mobile {
+        display:none;
+    }
+}
+
+
+
